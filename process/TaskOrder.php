@@ -12,8 +12,8 @@ class TaskOrder
 {
     public function onWorkerStart(Worker $worker)
     {
-        // dd($worker->id);
-        Log::info('开始 - 订单处理任务');
+        dd($worker->id);
+        /*Log::info('开始 - 订单处理任务');
 
         Db::name('order')->field('id,order_no,trade_no,order_status,create_time')->order('id ASC')->chunk(500, function ($list) {
             foreach ($list as $item) {
@@ -26,7 +26,7 @@ class TaskOrder
             }
         });
 
-        Log::info('结束 - 订单处理任务');
+        Log::info('结束 - 订单处理任务');*/
     }
 
 }
